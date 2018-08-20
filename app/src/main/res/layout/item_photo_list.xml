@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/headlineMarkerItemTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="9dp"
+            android:layout_marginTop="0dp"
+            android:hint="headline"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/descriptionMarkerItemTextView"
+            app:layout_constraintEnd_toStartOf="@+id/photoMarkerItemImageView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/descriptionMarkerItemTextView"
+            android:layout_width="0dp"
+            android:layout_height="31dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:hint="description"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/photoMarkerItemImageView"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/photoMarkerItemImageView"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginEnd="6dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintBottom_toBottomOf="@+id/descriptionMarkerItemTextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/headlineMarkerItemTextView" />
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.v7.widget.CardView>
